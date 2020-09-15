@@ -1,0 +1,31 @@
+<div
+	ng-if="vm.image"
+	class="pb-3">
+
+	<button
+		class="btn btn-primary"
+		ng-click="vm.reset()">
+		Reset
+	</button>
+</div>
+
+<img
+	class="img-fluid preview-color-indicator"
+	style="border-color: rgb({{vm.color}})"
+	ng-if="vm.image"
+	ng-src="{{vm.image}}">
+
+
+<div
+	class="form-group"
+	ng-if="!vm.image">
+
+	<label for="cat-photo">
+		Upload your cat
+	</label>
+	<input
+		id="cat-photo"
+		type="file"
+		class="form-control-file"
+		file-change="vm.upload($event)">
+</div>

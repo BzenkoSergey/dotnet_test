@@ -1,0 +1,6 @@
+/* styles in src/style directory are applied to the whole page */
+
+.preview-color-indicator {
+	border-width: 5px;
+	border-style: solid;
+}
